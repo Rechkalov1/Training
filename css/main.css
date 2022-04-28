@@ -307,6 +307,8 @@ textarea {
 
 .hero__button {
   display: flex;
+  position: relative;
+  bottom: 300px;
 }
 
 .button {
@@ -330,6 +332,10 @@ textarea {
   background-color: #ffffff;
 }
 
+.header {
+  background: #ffb8ca;
+}
+
 .logo__box {
   width: 199px;
   height: 50px;
@@ -344,6 +350,10 @@ textarea {
   background: #ffb8ca;
 }
 
+.hero__box {
+  margin-top: 20px;
+}
+
 .hero__color-txt {
   font-family: "Titan One", cursive;
   font-weight: 400;
@@ -355,6 +365,9 @@ textarea {
 }
 
 .hero__title {
+  position: relative;
+  bottom: 318px;
+  z-index: 2;
   font-family: "Titan One", cursive;
   font-weight: 400;
   font-size: 38px;
@@ -362,5 +375,18 @@ textarea {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.hero__img {
+  width: 346px;
+  height: 344px;
+  position: absolute;
+}
+
+.hero__img2 {
+  position: relative;
+  left: 113px;
+  width: 171px;
+  height: 410px;
 }
 /*# sourceMappingURL=main.css.map */

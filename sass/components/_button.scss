@@ -1,6 +1,8 @@
 // КНОПКИ ДЛЯ ГЕРОЯ ~~~~~~~~~~~~~~~~~~~~~
 .hero__button {
   display: flex;
+  position: relative;
+  bottom: 300px;
 }
 .button {
   font-family: $font-style;

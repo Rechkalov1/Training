@@ -1,6 +1,9 @@
 .hero {
   background: #ffb8ca;
 }
+.hero__box {
+  margin-top: 20px;
+}
 .hero__color-txt {
   font-family: $second-style;
 
@@ -12,6 +15,9 @@
   color: #d41443;
 }
 .hero__title {
+  position: relative;
+  bottom: 318px;
+  z-index: 2;
   font-family: $second-style;
 
   font-weight: $font-weight400;
@@ -21,4 +27,15 @@
   text-transform: uppercase;
 
   color: #ffffff;
+}
+.hero__img {
+  width: 346px;
+  height: 344px;
+  position: absolute;
+}
+.hero__img2 {
+  position: relative;
+  left: 113px;
+  width: 171px;
+  height: 410px;
 }
