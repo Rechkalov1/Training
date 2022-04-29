@@ -16,15 +16,31 @@
   <body>
     <header class="header">
       <div class="container">
-        <a class="logo">
-          <img
-            class="logo__img"
-            src="./images/logo 1.svg"
-            alt="Логотип"
-            width="199"
-            height="50"
-          />
-        </a>
+        <div class="header__menu">
+          <a class="logo">
+            <img
+              class="logo__img"
+              src="./images/logo 1.svg"
+              alt="Логотип"
+              width="199"
+              height="50"
+            />
+          </a>
+          <button
+            class="menu-btn"
+            type="button"
+            aria-label="кнопка меню"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg class="menu-btn__icon" width="20" height="12">
+              <use
+                class="menu-btn__icon-open"
+                href="./images/icons.svg#icon-Burger"
+              ></use>
+            </svg>
+          </button>
+        </div>
         <div class="hero__box">
           <img
             class="hero__img"
@@ -35,7 +51,7 @@
           />
           <img
             class="hero__img2"
-            src="./images/slider.svg"
+            src="./images/slider-pic7.png"
             alt="Кружек"
             width="346"
             height="344"
@@ -59,10 +75,59 @@
       </div>
     </header>
     <main>
-      <section class="container">
-        <p>100% natural</p>
-        <h2>products</h2>
+      <section class="container section-product">
+        <div class="product">
+          <p class=" product__description-color">100% natural</p>
+        <h2 class="product__product">products</h2>
+        <div class="product__thumb"><p class="product__description ">ice cream</p>
+          <img
+          class="images"
+          src="./images/ice-cream.png">
+        <p class="product__text">Lorem ipsum dolor sit amet, 
+          consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et. 
+          dolore magna aliqua facilisis. </p>
+        </div></div>
       </section>
     </main>
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <button class="menu-btn-close" type="button" data-menu-close>
+          <svg class="menu-btn__icon" width="14" height="14">
+            <use
+              class="menu-btn__icon-close"
+              href="./images/icons.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <button class="mobile-nav__button" type="button">Buy now
+            <svg class="mobile-nav__decor"><use href="./images/icons.svg#icon-arrow" Width="5.26" Height="8"
+></use></svg>
+          </button>
+          <ul class="mobile-nav_list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link current" href="./index.html">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="Контакты">Our products</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="Контакты">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        
+
+          
+        </div>
+      </div>
+    </div>
+    <script src="./js/open-close.js"></script>
   </body>
 </html>

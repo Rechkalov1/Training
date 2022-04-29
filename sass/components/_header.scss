@@ -1,6 +1,12 @@
 .header {
   background: #ffb8ca;
 }
+.header__menu {
+  @media screen and(max-width:767px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .logo__box {
   width: 199px;
   height: 50px;

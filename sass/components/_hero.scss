@@ -27,8 +27,13 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 218px;
+    height: 106px;
+  }
 }
 .hero__img {
+  left: 8px;
   width: 346px;
   height: 344px;
   position: absolute;
